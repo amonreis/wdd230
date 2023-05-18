@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: Poppins, Roboto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1a324e;
+    color: #ffffff;
+    padding: 6px;
+    
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+section {
+    margin: 100px auto auto auto;
+    width: 300px;
+    border: .5px solid gray;
+    background-color: #ebebeb;
+}
+
+h3 {
+    background-color: #1a324e;
+    color: #ffffff;
+    margin-top: 0;
+    padding: 5px 0 5px 10px;
+    padding-top: 4px;
+    text-align: left;
+}
+img {
+    width: 280px;
+    border: .5px solid #8c8c8c;
+    display: block;
+    margin: 0 auto;
+}
+
+h3, section {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+p {
+    text-align: justify;
+    margin: 5px 10px 5px 10px;
+}
+
+.brand {
+    text-align: left;
+    margin-left: 10px;
+}
+
+a {
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+footer {
+    background-color: #1a324e;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-top: 35px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
